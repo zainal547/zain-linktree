@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font-family: "Arial", sans-serif;
+  position: relative;
+  background-image: url(img/Forest.jpg);
+  /* background-color: black; */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+section {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  inset: 0;
+  overflow-y: auto;
+}
+
+section main {
+  padding: 100px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 600px;
+  justify-content: center;
+  align-items: center;
+}
+
+section main img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+section main h2 {
+  font-weight: 600;
+  color: #f0f0f0;
+  text-shadow: 0 0 1px transparent, 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+section main p {
+  color: white;
+  font-size: 1em;
+  margin-top: 5px;
+  text-shadow: 0 0 1px transparent, 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+section main a {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 12px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border-radius: 8px;
+  gap: 20px;
+  transition: all 0.4s ease-in-out;
+  background-image: url("img/paper-shredding.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+section main a span,
+section main a i {
+  position: relative;
+  z-index: 1;
+}
+
+section main a:hover {
+  background-color: #f0f0f0;
+  color: #333;
+  transform: translateY(-3px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+section main a i {
+  font-size: 1.4em;
+}
+
+section footer p {
+  color: #ddd;
+  font-size: 1em;
+  padding: 20px;
+  text-shadow: 0 0 1px transparent, 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+section footer p a {
+  color: #f0f0f0;
+  font-weight: 600;
+  text-decoration: none;
+}
